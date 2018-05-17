@@ -1,11 +1,21 @@
 #include "Engine.hpp"
 
-Engine::Engine(sf::RenderWindow &window) : window(window) {}
+Engine::Engine() : window(sf::VideoMode(800, 600), "SFML Game") {
+}
 
 void Engine::Start() {
-	auto e = CreateEntity();
-	e->AddComponent<FPSCounter>();
 	running = true;
+	//Create FPS Counter
+	CreateEntity()->AddComponent<FPSCounter>();
+
+	Entity *player = CreateEntity();
+	auto *spriteRenderer = player->AddComponent<SpriteRenderer>();
+	auto *position = player->GetComponent<Position>();
+
+	position->position = sf::Vector2f(400, 300);
+
+	spriteRenderer->LoadTexture("../assets/img/player.png");
+	spriteRenderer->sourceRect = sf::IntRect(0, 0, 32, 32);
 }
 
 Engine::~Engine() {
@@ -16,13 +26,19 @@ Engine::~Engine() {
 
 bool Engine::IsRunning() { return running; }
 
-void Engine::HandleEvent(sf::Event event) {
-	switch (event.type) {
-		case sf::Event::Closed:
-			running = false;
-			break;
-		default:
-			break;
+void Engine::HandleEvents() {
+	sf::Event event{};
+	while (window.pollEvent(event)) {
+		switch (event.type) {
+			case sf::Event::Closed:
+				running = false;
+				break;
+			case sf::Event::KeyPressed:
+				if (event.key.code == sf::Keyboard::Escape) running = false;
+				break;
+			default:
+				break;
+		}
 	}
 }
 

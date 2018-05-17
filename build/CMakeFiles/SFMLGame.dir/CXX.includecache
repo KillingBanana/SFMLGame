@@ -1,0 +1,106 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Code/C++ Projects/SFMLGame/src/Components/Collider.cpp
+Collider.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Collider.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/Collider.hpp
+Component.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/Component.cpp
+Component.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+SFML/Graphics.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/SFML/Graphics.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/Components.hpp
+Position.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+SpriteRenderer.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
+Collider.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Collider.hpp
+FPSCounter.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.cpp
+FPSCounter.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp
+TextRenderer.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/Position.cpp
+Position.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+Component.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+SFML/System.hpp
+-
+
+D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.cpp
+iostream
+-
+SpriteRenderer.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
+../Entity.hpp
+D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
+Component.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+Position.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.cpp
+TextRenderer.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp
+../Entity.hpp
+D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp
+Component.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+Position.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Engine.cpp
+Engine.hpp
+D:/Code/C++ Projects/SFMLGame/src/Engine.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Engine.hpp
+SFML/Graphics.hpp
+-
+Components/Components.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Components.hpp
+Entity.hpp
+D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Entity.cpp
+Entity.hpp
+D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+unordered_map
+-
+iostream
+-
+Components/Component.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/main.cpp
+Engine.hpp
+D:/Code/C++ Projects/SFMLGame/src/Engine.hpp
+

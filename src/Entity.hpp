@@ -2,6 +2,7 @@
 #define ECS_ENTITY_HPP
 
 #include <unordered_map>
+#include <iostream>
 #include "Components/Component.hpp"
 
 class Entity {
@@ -13,12 +14,18 @@ public:
 	void Draw(sf::RenderTarget &renderTarget);
 
 	template<typename T>
+	bool HasComponent() {
+		std::unordered_map<ComponentID, Component *>::const_iterator f = components.find(Component::GetComponentID<T>());
+		return f != components.end();
+	}
+
+	template<typename T>
 	T *AddComponent() {
-		if (GetComponent<T>() != nullptr) { //Entity already has component
+		if (HasComponent<T>()) { //Entity already has component
 			return nullptr;
 		} else {
-			T *component = (T *) (components.insert(std::make_pair<ComponentID, Component *>(Component::GetComponentID<T>(), new T(*this))).first->second);
-			component->Start();
+			T *component = dynamic_cast<T *>(components.insert(std::make_pair<ComponentID, Component *>(Component::GetComponentID<T>(), new T(*this))).first->second);
+			if (component != nullptr) component->Start();
 			return component;
 		}
 	}
@@ -30,6 +37,13 @@ public:
 		return f == components.end()
 			   ? nullptr
 			   : dynamic_cast<T *>(f->second);
+	}
+
+	template<typename T>
+	T *GetOrAddComponent() {
+		T *component = GetComponent<T>();
+		if (component == nullptr) component = AddComponent<T>();
+		return component;
 	}
 
 private:

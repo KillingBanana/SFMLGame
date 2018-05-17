@@ -1,17 +1,12 @@
 #ifndef ECS_FPSCOUNTER_HPP
 #define ECS_FPSCOUNTER_HPP
 
-#include "Component.hpp"
+#include "TextRenderer.hpp"
 
-class FPSCounter : public Component {
+class FPSCounter : public TextRenderer {
 public:
-	explicit FPSCounter(Entity &entityID);
-	void Start() override;
+	explicit FPSCounter(Entity &entity);
 	void Update(float dTime) override;
-	void Draw(sf::RenderTarget &renderTarget) override;
-private:
-	sf::Font font;
-	sf::Text text;
 };
 
 #endif //ECS_FPSCOUNTER_HPP

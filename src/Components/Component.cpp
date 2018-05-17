@@ -1,6 +1,6 @@
 #include "Component.hpp"
 
-Component::Component(Entity &entityID) : entityID(entityID) {}
+Component::Component(Entity &entityID) : entity(entityID) {}
 
 Component::~Component() = default;
 

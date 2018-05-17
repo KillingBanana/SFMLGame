@@ -2,7 +2,7 @@
 #define ECS_COMPONENTS_HPP
 
 #include "Position.hpp"
-#include "Renderer.hpp"
+#include "SpriteRenderer.hpp"
 #include "Collider.hpp"
 #include "FPSCounter.hpp"
 

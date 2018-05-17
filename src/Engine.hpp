@@ -7,11 +7,11 @@
 
 class Engine {
 public:
-	explicit Engine(sf::RenderWindow &window);
+	Engine();
 	~Engine();
 
 	void Start();
-	void HandleEvent(sf::Event event);
+	void HandleEvents();
 	void Update();
 	void Draw();
 
@@ -20,8 +20,8 @@ public:
 	bool IsRunning();
 private:
 	bool running = false;
+	sf::RenderWindow window;
 	sf::Clock clock;
-	sf::RenderWindow &window;
 
 	std::vector<Entity *> entities;
 };

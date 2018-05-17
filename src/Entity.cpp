@@ -10,12 +10,12 @@ Entity::~Entity() {
 
 void Entity::Update(float dTime) {
 	for (auto item:components) {
-		item.second->Update(dTime);
+		if (item.second->enabled) item.second->Update(dTime);
 	}
 }
 
 void Entity::Draw(sf::RenderTarget &renderTarget) {
 	for (auto item:components) {
-		item.second->Draw(renderTarget);
+		if (item.second->enabled) item.second->Draw(renderTarget);
 	}
 }

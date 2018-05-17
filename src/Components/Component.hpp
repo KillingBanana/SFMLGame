@@ -8,7 +8,8 @@ using ComponentID = unsigned short;
 
 class Component {
 public:
-	const Entity &entityID;
+	bool enabled = true;
+	Entity &entity;
 
 	virtual ~Component();
 
