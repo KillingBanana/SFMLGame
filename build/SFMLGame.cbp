@@ -127,12 +127,6 @@
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp">
 			<Option target="SFMLGame"/>
 		</Unit>
-		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.cpp">
-			<Option target="SFMLGame"/>
-		</Unit>
-		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp">
-			<Option target="SFMLGame"/>
-		</Unit>
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Engine.cpp">
 			<Option target="SFMLGame"/>
 		</Unit>
@@ -149,6 +143,18 @@
 			<Option target="SFMLGame"/>
 		</Unit>
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Manager.hpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/RenderEngine.cpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/TextureManager.cpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/TextureManager.hpp">
 			<Option target="SFMLGame"/>
 		</Unit>
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/main.cpp">

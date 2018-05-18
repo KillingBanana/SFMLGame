@@ -11,10 +11,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Code/C++ Projects/SFMLGame/src/Components/Position.cpp" "D:/Code/C++ Projects/SFMLGame/build/CMakeFiles/SFMLGame.dir/src/Components/Position.cpp.obj"
   "D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.cpp" "D:/Code/C++ Projects/SFMLGame/build/CMakeFiles/SFMLGame.dir/src/Components/SpriteRenderer.cpp.obj"
   "D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.cpp" "D:/Code/C++ Projects/SFMLGame/build/CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj"
-  "D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.cpp" "D:/Code/C++ Projects/SFMLGame/build/CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj"
   "D:/Code/C++ Projects/SFMLGame/src/Engine.cpp" "D:/Code/C++ Projects/SFMLGame/build/CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj"
   "D:/Code/C++ Projects/SFMLGame/src/Entity.cpp" "D:/Code/C++ Projects/SFMLGame/build/CMakeFiles/SFMLGame.dir/src/Entity.cpp.obj"
   "D:/Code/C++ Projects/SFMLGame/src/Manager.cpp" "D:/Code/C++ Projects/SFMLGame/build/CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj"
+  "D:/Code/C++ Projects/SFMLGame/src/RenderEngine.cpp" "D:/Code/C++ Projects/SFMLGame/build/CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj"
+  "D:/Code/C++ Projects/SFMLGame/src/TextureManager.cpp" "D:/Code/C++ Projects/SFMLGame/build/CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj"
   "D:/Code/C++ Projects/SFMLGame/src/main.cpp" "D:/Code/C++ Projects/SFMLGame/build/CMakeFiles/SFMLGame.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

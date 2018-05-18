@@ -75,8 +75,8 @@ SpriteRenderer.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
 ../Entity.hpp
 D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
-TextureManager.hpp
-D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
+../TextureManager.hpp
+D:/Code/C++ Projects/SFMLGame/src/TextureManager.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
 Component.hpp
@@ -98,29 +98,17 @@ D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
 Position.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
 
-D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.cpp
-iostream
--
-TextureManager.hpp
-D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
-
-D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
-SFML/Graphics.hpp
--
-
 D:/Code/C++ Projects/SFMLGame/src/Engine.cpp
 Engine.hpp
 D:/Code/C++ Projects/SFMLGame/src/Engine.hpp
-Components/TextureManager.hpp
-D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
-GL/glew.h
--
+TextureManager.hpp
+D:/Code/C++ Projects/SFMLGame/src/TextureManager.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Engine.hpp
 Manager.hpp
 D:/Code/C++ Projects/SFMLGame/src/Manager.hpp
-random
--
+RenderEngine.hpp
+D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Entity.cpp
 Entity.hpp
@@ -143,6 +131,28 @@ Components/Components.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/Components.hpp
 Entity.hpp
 D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/RenderEngine.cpp
+RenderEngine.hpp
+D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
+iostream
+-
+GL/glew.h
+-
+
+D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
+SFML/Graphics.hpp
+-
+
+D:/Code/C++ Projects/SFMLGame/src/TextureManager.cpp
+iostream
+-
+TextureManager.hpp
+D:/Code/C++ Projects/SFMLGame/src/TextureManager.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/TextureManager.hpp
+SFML/Graphics.hpp
+-
 
 D:/Code/C++ Projects/SFMLGame/src/main.cpp
 Engine.hpp

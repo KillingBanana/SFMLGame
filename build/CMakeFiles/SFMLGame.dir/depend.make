@@ -30,17 +30,14 @@ CMakeFiles/SFMLGame.dir/src/Components/SpriteRenderer.cpp.obj: ../src/Components
 CMakeFiles/SFMLGame.dir/src/Components/SpriteRenderer.cpp.obj: ../src/Components/Position.hpp
 CMakeFiles/SFMLGame.dir/src/Components/SpriteRenderer.cpp.obj: ../src/Components/SpriteRenderer.cpp
 CMakeFiles/SFMLGame.dir/src/Components/SpriteRenderer.cpp.obj: ../src/Components/SpriteRenderer.hpp
-CMakeFiles/SFMLGame.dir/src/Components/SpriteRenderer.cpp.obj: ../src/Components/TextureManager.hpp
 CMakeFiles/SFMLGame.dir/src/Components/SpriteRenderer.cpp.obj: ../src/Entity.hpp
+CMakeFiles/SFMLGame.dir/src/Components/SpriteRenderer.cpp.obj: ../src/TextureManager.hpp
 
 CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj: ../src/Components/Component.hpp
 CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj: ../src/Components/Position.hpp
 CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj: ../src/Components/TextRenderer.cpp
 CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj: ../src/Components/TextRenderer.hpp
 CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj: ../src/Entity.hpp
-
-CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj: ../src/Components/TextureManager.cpp
-CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj: ../src/Components/TextureManager.hpp
 
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Components/Collider.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Components/Component.hpp
@@ -50,11 +47,12 @@ CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Components/KeyboardInput.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Components/Position.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Components/SpriteRenderer.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Components/TextRenderer.hpp
-CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Components/TextureManager.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Engine.cpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Engine.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Manager.hpp
+CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/RenderEngine.hpp
+CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/TextureManager.hpp
 
 CMakeFiles/SFMLGame.dir/src/Entity.cpp.obj: ../src/Components/Component.hpp
 CMakeFiles/SFMLGame.dir/src/Entity.cpp.obj: ../src/Entity.cpp
@@ -72,6 +70,12 @@ CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj: ../src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj: ../src/Manager.cpp
 CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj: ../src/Manager.hpp
 
+CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/RenderEngine.cpp
+CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/RenderEngine.hpp
+
+CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj: ../src/TextureManager.cpp
+CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj: ../src/TextureManager.hpp
+
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Components/Collider.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Components/Component.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Components/Components.hpp
@@ -83,5 +87,6 @@ CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Components/TextRenderer.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Engine.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Manager.hpp
+CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/RenderEngine.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/main.cpp
 

@@ -2,11 +2,11 @@
 
 void Manager::Start() {
 	//Create FPS Counter
-	Entity *fpsCounter = CreateEntity();
-	fpsCounter->AddComponent<FPSCounter>();
-	fpsCounter->drawOrder = 1000;
+	//Entity *fpsCounter = CreateEntity();
+	//fpsCounter->AddComponent<FPSCounter>();
+	//fpsCounter->drawOrder = 1000;
 
-	CreatePlayer(64, 600);
+	//CreatePlayer(64, 600);
 }
 
 void Manager::Update(float dTime) {

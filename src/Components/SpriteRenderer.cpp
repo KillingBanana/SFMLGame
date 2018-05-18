@@ -1,6 +1,6 @@
 #include "SpriteRenderer.hpp"
 #include "../Entity.hpp"
-#include "TextureManager.hpp"
+#include "../TextureManager.hpp"
 
 SpriteRenderer::SpriteRenderer(Entity &entityID) : Component(entityID) {}
 

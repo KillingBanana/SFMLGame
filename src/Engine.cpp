@@ -1,24 +1,19 @@
 #include "Engine.hpp"
-#include "Components/TextureManager.hpp"
-#include <GL/glew.h>
+#include "TextureManager.hpp"
 
 Engine::Engine() : window(
 		sf::VideoMode(800, 600),
 		"Game made using SFML and OpenGL",
-		sf::Style::Default
+		sf::Style::Default,
+		sf::ContextSettings(24, 8, 4, 4, 6)
 ) {
 	window.setActive();
-	glewInit();
 }
 
 void Engine::Start() {
 	running = true;
 
-	glEnable(GL_TEXTURE_2D);
-	glGenBuffers(1, &vertexBufferObject);
-
-	std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
-
+	renderEngine.InitOpenGL();
 	manager.Start();
 }
 
@@ -35,7 +30,8 @@ void Engine::HandleEvents() {
 				if (event.key.code == sf::Keyboard::Escape) Stop();
 				break;
 			case sf::Event::Resized:
-				glViewport(0, 0, event.size.width, event.size.height);
+				renderEngine.Resize(event.size.width, event.size.height);
+				break;
 			default:
 				break;
 		}
@@ -52,12 +48,12 @@ void Engine::Update() {
 void Engine::Draw() {
 	if (!running) return;
 
-	window.clear();
+	//window.clear();
+	renderEngine.Render(window);
 
-	glClearColor(.2, .3, .3, 1);
-	glClear(GL_COLOR_BUFFER_BIT);
-
-	manager.Draw(window);
+	//window.pushGLStates();
+	//manager.Draw(window);
+	//window.popGLStates();
 
 	window.display();
 }

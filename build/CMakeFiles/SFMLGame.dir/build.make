@@ -272,28 +272,28 @@ CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj.provides: CMakeFiles
 CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj
 
 
-CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj: CMakeFiles/SFMLGame.dir/flags.make
-CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj: ../src/Components/TextureManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj"
-	D:\Programs\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLGame.dir\src\Components\TextureManager.cpp.obj -c "D:\Code\C++ Projects\SFMLGame\src\Components\TextureManager.cpp"
+CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj: CMakeFiles/SFMLGame.dir/flags.make
+CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj: ../src/TextureManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj"
+	D:\Programs\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLGame.dir\src\TextureManager.cpp.obj -c "D:\Code\C++ Projects\SFMLGame\src\TextureManager.cpp"
 
-CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.i"
-	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Code\C++ Projects\SFMLGame\src\Components\TextureManager.cpp" > CMakeFiles\SFMLGame.dir\src\Components\TextureManager.cpp.i
+CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.i"
+	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Code\C++ Projects\SFMLGame\src\TextureManager.cpp" > CMakeFiles\SFMLGame.dir\src\TextureManager.cpp.i
 
-CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.s"
-	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Code\C++ Projects\SFMLGame\src\Components\TextureManager.cpp" -o CMakeFiles\SFMLGame.dir\src\Components\TextureManager.cpp.s
+CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.s"
+	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Code\C++ Projects\SFMLGame\src\TextureManager.cpp" -o CMakeFiles\SFMLGame.dir\src\TextureManager.cpp.s
 
-CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj.requires:
+CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj.requires:
 
-.PHONY : CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj.requires
+.PHONY : CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj.requires
 
-CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj.provides: CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj.provides.build
-.PHONY : CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj.provides
+CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj.provides: CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj.provides
 
-CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj
+CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj
 
 
 CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.obj: CMakeFiles/SFMLGame.dir/flags.make
@@ -344,6 +344,30 @@ CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj.provides: CMakeFiles/SFMLGame.dir/sr
 CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj
 
 
+CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: CMakeFiles/SFMLGame.dir/flags.make
+CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/RenderEngine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj"
+	D:\Programs\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLGame.dir\src\RenderEngine.cpp.obj -c "D:\Code\C++ Projects\SFMLGame\src\RenderEngine.cpp"
+
+CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.i"
+	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Code\C++ Projects\SFMLGame\src\RenderEngine.cpp" > CMakeFiles\SFMLGame.dir\src\RenderEngine.cpp.i
+
+CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.s"
+	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Code\C++ Projects\SFMLGame\src\RenderEngine.cpp" -o CMakeFiles\SFMLGame.dir\src\RenderEngine.cpp.s
+
+CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.requires
+
+CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.provides: CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.provides
+
+CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj
+
+
 # Object files for target SFMLGame
 SFMLGame_OBJECTS = \
 "CMakeFiles/SFMLGame.dir/src/main.cpp.obj" \
@@ -355,9 +379,10 @@ SFMLGame_OBJECTS = \
 "CMakeFiles/SFMLGame.dir/src/Entity.cpp.obj" \
 "CMakeFiles/SFMLGame.dir/src/Components/FPSCounter.cpp.obj" \
 "CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj" \
-"CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj" \
+"CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj" \
 "CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.obj" \
-"CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj"
+"CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj" \
+"CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj"
 
 # External object files for target SFMLGame
 SFMLGame_EXTERNAL_OBJECTS =
@@ -371,14 +396,15 @@ SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Components/Component.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Entity.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Components/FPSCounter.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj
-SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj
+SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj
+SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/build.make
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/linklibs.rsp
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/objects1.rsp
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable SFMLGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable SFMLGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SFMLGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -395,9 +421,10 @@ CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Components/Compone
 CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Entity.cpp.obj.requires
 CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Components/FPSCounter.cpp.obj.requires
 CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj.requires
-CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj.requires
+CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj.requires
 CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.obj.requires
 CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj.requires
+CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.requires
 
 .PHONY : CMakeFiles/SFMLGame.dir/requires
 

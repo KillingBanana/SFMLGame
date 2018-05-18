@@ -2,6 +2,7 @@
   <dictionary name="killi">
     <words>
       <w>collider</w>
+      <w>sfml</w>
     </words>
   </dictionary>
 </component>

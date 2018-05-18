@@ -2,7 +2,7 @@
 #define ECS_ENGINE_HPP
 
 #include "Manager.hpp"
-#include <random>
+#include "RenderEngine.hpp"
 
 class Engine {
 public:
@@ -15,16 +15,14 @@ public:
 
 	bool IsRunning();
 private:
-	bool running = false;
-	void Stop();
-
 	sf::RenderWindow window;
 	sf::Clock clock;
-	std::default_random_engine generator;
 
 	Manager manager;
+	RenderEngine renderEngine;
 
-	unsigned int vertexBufferObject;
+	bool running = false;
+	void Stop();
 };
 
 #endif //ECS_ENGINE_HPP
