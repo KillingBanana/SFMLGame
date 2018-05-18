@@ -1,6 +1,6 @@
-#include <iostream>
 #include "SpriteRenderer.hpp"
 #include "../Entity.hpp"
+#include "TextureManager.hpp"
 
 SpriteRenderer::SpriteRenderer(Entity &entityID) : Component(entityID) {}
 
@@ -9,16 +9,17 @@ void SpriteRenderer::Start() {
 }
 
 void SpriteRenderer::Draw(sf::RenderTarget &renderTarget) {
+	if (position != nullptr) sprite.setPosition(position->position);
+
 	sprite.setTextureRect(sourceRect);
-	sprite.setPosition(position->position);
+	sprite.setOrigin(origin);
+	sprite.setRotation(angle);
+
+	if (position != nullptr) sprite.setScale(position->scale);
+
 	renderTarget.draw(sprite);
 }
 
 void SpriteRenderer::LoadTexture(const std::string &path) {
-	if (!texture.loadFromFile(path)) {
-		std::cerr << "Could not load texture " << path << std::endl;
-		enabled = false;
-	}
-	sprite.setTexture(texture);
-	sprite.setTextureRect(sourceRect);
+	sprite.setTexture(*TextureManager::GetTexture(path));
 }

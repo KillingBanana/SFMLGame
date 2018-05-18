@@ -25,12 +25,16 @@ D:/Code/C++ Projects/SFMLGame/src/Components/SFML/Graphics.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/Components.hpp
 Position.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
-SpriteRenderer.hpp
-D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
 Collider.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/Collider.hpp
+SpriteRenderer.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
+TextRenderer.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp
 FPSCounter.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp
+KeyboardInput.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.cpp
 FPSCounter.hpp
@@ -39,10 +43,26 @@ D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp
 TextRenderer.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp
+../Entity.hpp
+D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.cpp
+KeyboardInput.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.hpp
+Component.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+Position.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+../Entity.hpp
+D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Components/Position.cpp
 Position.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+../Entity.hpp
+D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
 Component.hpp
@@ -51,18 +71,20 @@ SFML/System.hpp
 -
 
 D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.cpp
-iostream
--
 SpriteRenderer.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
 ../Entity.hpp
 D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+TextureManager.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
 Component.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
 Position.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+SFML/Graphics.hpp
+-
 
 D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.cpp
 TextRenderer.hpp
@@ -76,29 +98,51 @@ D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
 Position.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
 
+D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.cpp
+iostream
+-
+TextureManager.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
+SFML/Graphics.hpp
+-
+
 D:/Code/C++ Projects/SFMLGame/src/Engine.cpp
 Engine.hpp
 D:/Code/C++ Projects/SFMLGame/src/Engine.hpp
+Components/TextureManager.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
+GL/glew.h
+-
 
 D:/Code/C++ Projects/SFMLGame/src/Engine.hpp
-SFML/Graphics.hpp
+Manager.hpp
+D:/Code/C++ Projects/SFMLGame/src/Manager.hpp
+random
 -
-Components/Components.hpp
-D:/Code/C++ Projects/SFMLGame/src/Components/Components.hpp
-Entity.hpp
-D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Entity.cpp
 Entity.hpp
 D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
-unordered_map
+map
 -
 iostream
 -
 Components/Component.hpp
 D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Manager.cpp
+Manager.hpp
+D:/Code/C++ Projects/SFMLGame/src/Manager.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Manager.hpp
+Components/Components.hpp
+D:/Code/C++ Projects/SFMLGame/src/Components/Components.hpp
+Entity.hpp
+D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/main.cpp
 Engine.hpp

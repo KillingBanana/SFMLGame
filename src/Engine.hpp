@@ -1,29 +1,30 @@
 #ifndef ECS_ENGINE_HPP
 #define ECS_ENGINE_HPP
 
-#include <SFML/Graphics.hpp>
-#include "Components/Components.hpp"
-#include "Entity.hpp"
+#include "Manager.hpp"
+#include <random>
 
 class Engine {
 public:
 	Engine();
-	~Engine();
 
 	void Start();
 	void HandleEvents();
 	void Update();
 	void Draw();
 
-	Entity *CreateEntity();
-
 	bool IsRunning();
 private:
 	bool running = false;
+	void Stop();
+
 	sf::RenderWindow window;
 	sf::Clock clock;
+	std::default_random_engine generator;
 
-	std::vector<Entity *> entities;
+	Manager manager;
+
+	unsigned int vertexBufferObject;
 };
 
 #endif //ECS_ENGINE_HPP

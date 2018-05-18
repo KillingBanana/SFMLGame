@@ -1,12 +1,13 @@
 #ifndef ECS_ENTITY_HPP
 #define ECS_ENTITY_HPP
 
-#include <unordered_map>
+#include <map>
 #include <iostream>
 #include "Components/Component.hpp"
 
 class Entity {
 public:
+	int drawOrder = 0;
 	Entity();
 	~Entity();
 
@@ -15,7 +16,7 @@ public:
 
 	template<typename T>
 	bool HasComponent() {
-		std::unordered_map<ComponentID, Component *>::const_iterator f = components.find(Component::GetComponentID<T>());
+		auto f = components.find(Component::GetComponentID<T>());
 		return f != components.end();
 	}
 
@@ -33,7 +34,7 @@ public:
 	template<typename T>
 	T *GetComponent() {
 		ComponentID id = Component::GetComponentID<T>();
-		std::unordered_map<ComponentID, Component *>::const_iterator f = components.find(id);
+		auto f = components.find(id);
 		return f == components.end()
 			   ? nullptr
 			   : dynamic_cast<T *>(f->second);
@@ -47,7 +48,7 @@ public:
 	}
 
 private:
-	std::unordered_map<ComponentID, Component *> components{};
+	std::map<ComponentID, Component *> components{};
 };
 
 #endif //ECS_ENTITY_HPP

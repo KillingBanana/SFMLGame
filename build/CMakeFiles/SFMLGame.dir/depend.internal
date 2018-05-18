@@ -14,15 +14,24 @@ CMakeFiles/SFMLGame.dir/src/Components/FPSCounter.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.obj
+ D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.cpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/Components/Position.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/Position.cpp
  D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/Components/SpriteRenderer.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.cpp
  D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
  D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
@@ -30,29 +39,49 @@ CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.cpp
  D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp
  D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj
+ D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.cpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Components/Collider.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/Components.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp
  D:/Code/C++ Projects/SFMLGame/src/Engine.cpp
  D:/Code/C++ Projects/SFMLGame/src/Engine.hpp
  D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Manager.hpp
 CMakeFiles/SFMLGame.dir/src/Entity.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
  D:/Code/C++ Projects/SFMLGame/src/Entity.cpp
  D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj
+ D:/Code/C++ Projects/SFMLGame/src/Components/Collider.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/Components.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Manager.cpp
+ D:/Code/C++ Projects/SFMLGame/src/Manager.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Components/Collider.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/Component.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/Components.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/Position.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/SpriteRenderer.hpp
  D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp
  D:/Code/C++ Projects/SFMLGame/src/Engine.hpp
  D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Manager.hpp
  D:/Code/C++ Projects/SFMLGame/src/main.cpp

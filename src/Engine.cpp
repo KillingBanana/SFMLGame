@@ -1,27 +1,25 @@
 #include "Engine.hpp"
+#include "Components/TextureManager.hpp"
+#include <GL/glew.h>
 
-Engine::Engine() : window(sf::VideoMode(800, 600), "SFML Game") {
+Engine::Engine() : window(
+		sf::VideoMode(800, 600),
+		"Game made using SFML and OpenGL",
+		sf::Style::Default
+) {
+	window.setActive();
+	glewInit();
 }
 
 void Engine::Start() {
 	running = true;
-	//Create FPS Counter
-	CreateEntity()->AddComponent<FPSCounter>();
 
-	Entity *player = CreateEntity();
-	auto *spriteRenderer = player->AddComponent<SpriteRenderer>();
-	auto *position = player->GetComponent<Position>();
+	glEnable(GL_TEXTURE_2D);
+	glGenBuffers(1, &vertexBufferObject);
 
-	position->position = sf::Vector2f(400, 300);
+	std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
 
-	spriteRenderer->LoadTexture("../assets/img/player.png");
-	spriteRenderer->sourceRect = sf::IntRect(0, 0, 32, 32);
-}
-
-Engine::~Engine() {
-	for (auto entity:entities) {
-		delete entity;
-	}
+	manager.Start();
 }
 
 bool Engine::IsRunning() { return running; }
@@ -31,11 +29,13 @@ void Engine::HandleEvents() {
 	while (window.pollEvent(event)) {
 		switch (event.type) {
 			case sf::Event::Closed:
-				running = false;
+				Stop();
 				break;
 			case sf::Event::KeyPressed:
-				if (event.key.code == sf::Keyboard::Escape) running = false;
+				if (event.key.code == sf::Keyboard::Escape) Stop();
 				break;
+			case sf::Event::Resized:
+				glViewport(0, 0, event.size.width, event.size.height);
 			default:
 				break;
 		}
@@ -43,27 +43,27 @@ void Engine::HandleEvents() {
 }
 
 void Engine::Update() {
-	float dTime = clock.restart().asSeconds();
+	if (!running) return;
 
-	for (auto entity:entities) {
-		entity->Update(dTime);
-	}
+	float dTime = clock.restart().asSeconds();
+	manager.Update(dTime);
 }
 
 void Engine::Draw() {
+	if (!running) return;
+
 	window.clear();
 
-	for (auto entity:entities) {
-		entity->Draw(window);
-	}
+	glClearColor(.2, .3, .3, 1);
+	glClear(GL_COLOR_BUFFER_BIT);
+
+	manager.Draw(window);
 
 	window.display();
 }
 
-Entity *Engine::CreateEntity() {
-	auto *entity = new Entity;
-
-	entities.emplace_back(entity);
-
-	return entity;
+void Engine::Stop() {
+	running = false;
+	TextureManager::Clear();
+	manager.Stop();
 }

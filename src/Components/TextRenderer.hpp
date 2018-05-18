@@ -6,13 +6,14 @@
 
 class TextRenderer : public Component {
 public:
+	sf::Vector2f position;
 	explicit TextRenderer(Entity &entity);
 	void Start() override;
-	void Update(float dTime) override;
 	void Draw(sf::RenderTarget &renderTarget) override;
+
 	void LoadFont(const std::string &path);
+	void SetString(std::string string);
 protected:
-	Position *position;
 	sf::Font font;
 	sf::Text text;
 };

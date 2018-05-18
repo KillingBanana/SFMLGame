@@ -103,6 +103,12 @@
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Components/FPSCounter.hpp">
 			<Option target="SFMLGame"/>
 		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.cpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Components/KeyboardInput.hpp">
+			<Option target="SFMLGame"/>
+		</Unit>
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Components/Position.cpp">
 			<Option target="SFMLGame"/>
 		</Unit>
@@ -121,6 +127,12 @@
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Components/TextRenderer.hpp">
 			<Option target="SFMLGame"/>
 		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.cpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Components/TextureManager.hpp">
+			<Option target="SFMLGame"/>
+		</Unit>
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Engine.cpp">
 			<Option target="SFMLGame"/>
 		</Unit>
@@ -131,6 +143,12 @@
 			<Option target="SFMLGame"/>
 		</Unit>
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Entity.hpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Manager.cpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Manager.hpp">
 			<Option target="SFMLGame"/>
 		</Unit>
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/main.cpp">

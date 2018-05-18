@@ -203,6 +203,33 @@ src/Components/FPSCounter.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Components/FPSCounter.cpp.s
 .PHONY : src/Components/FPSCounter.cpp.s
 
+src/Components/KeyboardInput.obj: src/Components/KeyboardInput.cpp.obj
+
+.PHONY : src/Components/KeyboardInput.obj
+
+# target to build an object file
+src/Components/KeyboardInput.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.obj
+.PHONY : src/Components/KeyboardInput.cpp.obj
+
+src/Components/KeyboardInput.i: src/Components/KeyboardInput.cpp.i
+
+.PHONY : src/Components/KeyboardInput.i
+
+# target to preprocess a source file
+src/Components/KeyboardInput.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.i
+.PHONY : src/Components/KeyboardInput.cpp.i
+
+src/Components/KeyboardInput.s: src/Components/KeyboardInput.cpp.s
+
+.PHONY : src/Components/KeyboardInput.s
+
+# target to generate assembly for a file
+src/Components/KeyboardInput.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.s
+.PHONY : src/Components/KeyboardInput.cpp.s
+
 src/Components/Position.obj: src/Components/Position.cpp.obj
 
 .PHONY : src/Components/Position.obj
@@ -284,6 +311,33 @@ src/Components/TextRenderer.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.s
 .PHONY : src/Components/TextRenderer.cpp.s
 
+src/Components/TextureManager.obj: src/Components/TextureManager.cpp.obj
+
+.PHONY : src/Components/TextureManager.obj
+
+# target to build an object file
+src/Components/TextureManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.obj
+.PHONY : src/Components/TextureManager.cpp.obj
+
+src/Components/TextureManager.i: src/Components/TextureManager.cpp.i
+
+.PHONY : src/Components/TextureManager.i
+
+# target to preprocess a source file
+src/Components/TextureManager.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.i
+.PHONY : src/Components/TextureManager.cpp.i
+
+src/Components/TextureManager.s: src/Components/TextureManager.cpp.s
+
+.PHONY : src/Components/TextureManager.s
+
+# target to generate assembly for a file
+src/Components/TextureManager.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Components/TextureManager.cpp.s
+.PHONY : src/Components/TextureManager.cpp.s
+
 src/Engine.obj: src/Engine.cpp.obj
 
 .PHONY : src/Engine.obj
@@ -338,6 +392,33 @@ src/Entity.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Entity.cpp.s
 .PHONY : src/Entity.cpp.s
 
+src/Manager.obj: src/Manager.cpp.obj
+
+.PHONY : src/Manager.obj
+
+# target to build an object file
+src/Manager.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj
+.PHONY : src/Manager.cpp.obj
+
+src/Manager.i: src/Manager.cpp.i
+
+.PHONY : src/Manager.i
+
+# target to preprocess a source file
+src/Manager.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Manager.cpp.i
+.PHONY : src/Manager.cpp.i
+
+src/Manager.s: src/Manager.cpp.s
+
+.PHONY : src/Manager.s
+
+# target to generate assembly for a file
+src/Manager.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Manager.cpp.s
+.PHONY : src/Manager.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -383,6 +464,9 @@ help:
 	@echo ... src/Components/FPSCounter.obj
 	@echo ... src/Components/FPSCounter.i
 	@echo ... src/Components/FPSCounter.s
+	@echo ... src/Components/KeyboardInput.obj
+	@echo ... src/Components/KeyboardInput.i
+	@echo ... src/Components/KeyboardInput.s
 	@echo ... src/Components/Position.obj
 	@echo ... src/Components/Position.i
 	@echo ... src/Components/Position.s
@@ -392,12 +476,18 @@ help:
 	@echo ... src/Components/TextRenderer.obj
 	@echo ... src/Components/TextRenderer.i
 	@echo ... src/Components/TextRenderer.s
+	@echo ... src/Components/TextureManager.obj
+	@echo ... src/Components/TextureManager.i
+	@echo ... src/Components/TextureManager.s
 	@echo ... src/Engine.obj
 	@echo ... src/Engine.i
 	@echo ... src/Engine.s
 	@echo ... src/Entity.obj
 	@echo ... src/Entity.i
 	@echo ... src/Entity.s
+	@echo ... src/Manager.obj
+	@echo ... src/Manager.i
+	@echo ... src/Manager.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
