@@ -1,18 +1,17 @@
 #include "RenderEngine.hpp"
-#include <iostream>
-#include <GL/glew.h>
+#include <cmath>
 
 void RenderEngine::InitOpenGL() {
-	int success;
-	char infoLog[512];
-	float vertices[]{-0.5f, -0.5f, 0.0f,
-					 0.5f, -0.5f, 0.0f,
-					 -0.5f, 0.5f, 0.0f};
-
 	glewExperimental = GL_TRUE;
 	glewInit();
-	glEnable(GL_IMAGE_2D);
 
+	shader.Init("../assets/shaders/vertexShader.vs", "../assets/shaders/fragmentShader.fs");
+
+	//Enable or disable wireframe
+	glPolygonMode(GL_FRONT_AND_BACK, wireFrame ? GL_LINE : GL_FILL);
+}
+
+void RenderEngine::InitShape() {
 	//Create Vertex Buffer Object
 	glGenBuffers(1, &vertexBufferObject);
 	glBindBuffer(GL_ARRAY_BUFFER, vertexBufferObject);
@@ -22,62 +21,30 @@ void RenderEngine::InitOpenGL() {
 	glGenVertexArrays(1, &vertexArrayObject);
 	glBindVertexArray(vertexArrayObject);
 
-	//Create Vertex Shader
-	unsigned int vertexShader;
-	vertexShader = glCreateShader(GL_VERTEX_SHADER);
-	glShaderSource(vertexShader, 1, &vertexShaderSource, nullptr);
-	glCompileShader(vertexShader);
+	//Create Element Buffer Object
+	//glGenBuffers(1, &elementBufferObject);
+	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementBufferObject);
+	//glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-	//Check Vertex Shader
-	glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
-	if (!success) {
-		glGetShaderInfoLog(vertexShader, 512, nullptr, infoLog);
-		std::cout << "Error: Shader linking failed, error:\n" << infoLog << std::endl;
-	}
-
-	//Create Fragment Shader
-	unsigned int fragmentShader;
-	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-	glShaderSource(fragmentShader, 1, &fragmentShaderSource, nullptr);
-	glCompileShader(fragmentShader);
-
-	//Check Fragment Shader
-	glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
-	if (!success) {
-		glGetShaderInfoLog(fragmentShader, 512, nullptr, infoLog);
-		std::cout << "Error: Shader linking failed, error:\n" << infoLog << std::endl;
-	}
-
-	//Create Shader Program
-	shaderProgram = glCreateProgram();
-	glAttachShader(shaderProgram, vertexShader);
-	glAttachShader(shaderProgram, fragmentShader);
-	glLinkProgram(shaderProgram);
-	glValidateProgram(shaderProgram);
-
-	//Check Shader Program
-	glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-	if (!success) {
-		glGetProgramInfoLog(shaderProgram, 512, nullptr, infoLog);
-		std::cout << "Error: Program linking failed, log:\n" << infoLog << std::endl;
-	}
-
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *) nullptr);
+	//Positions
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), nullptr);
 	glEnableVertexAttribArray(0);
 
-	//Activate program and delete shaders
-	glUseProgram(shaderProgram);
-	glDeleteShader(vertexShader);
-	glDeleteShader(fragmentShader);
+	//Colors
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *) (3 * sizeof(float)));
+	glEnableVertexAttribArray(1);
 }
 
 void RenderEngine::Render(sf::RenderWindow &renderWindow) {
 	glClearColor(.2, .3, .3, 1);
 	glClear(GL_COLOR_BUFFER_BIT);
 
-	glUseProgram(shaderProgram);
-	glBindVertexArray(vertexArrayObject);
+	shader.Use();
+	shader.SetFloat("offset", std::sin(clock.getElapsedTime().asSeconds()) / 2);
+
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vertexBufferObject);
 	glDrawArrays(GL_TRIANGLES, 0, 3);
+	//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
 }
 
 void RenderEngine::Resize(int width, int height) {

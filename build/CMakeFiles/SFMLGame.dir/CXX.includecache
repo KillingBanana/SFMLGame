@@ -135,13 +135,31 @@ D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 D:/Code/C++ Projects/SFMLGame/src/RenderEngine.cpp
 RenderEngine.hpp
 D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
-iostream
--
-GL/glew.h
+cmath
 -
 
 D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
 SFML/Graphics.hpp
+-
+GL/glew.h
+-
+Rendering/Shader.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.cpp
+Shader.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp
+fstream
+-
+sstream
+-
+iostream
+-
+
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp
+GL/glew.h
+-
+string
 -
 
 D:/Code/C++ Projects/SFMLGame/src/TextureManager.cpp

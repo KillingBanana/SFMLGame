@@ -5,8 +5,7 @@ Engine::Engine() : window(
 		sf::VideoMode(800, 600),
 		"Game made using SFML and OpenGL",
 		sf::Style::Default,
-		sf::ContextSettings(24, 8, 4, 4, 6)
-) {
+		sf::ContextSettings(24, 8, 4, 4, 6)) {
 	window.setActive();
 }
 
@@ -14,6 +13,8 @@ void Engine::Start() {
 	running = true;
 
 	renderEngine.InitOpenGL();
+	renderEngine.InitShape();
+
 	manager.Start();
 }
 

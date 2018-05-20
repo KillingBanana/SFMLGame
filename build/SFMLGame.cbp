@@ -151,6 +151,12 @@
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp">
 			<Option target="SFMLGame"/>
 		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.cpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp">
+			<Option target="SFMLGame"/>
+		</Unit>
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/TextureManager.cpp">
 			<Option target="SFMLGame"/>
 		</Unit>

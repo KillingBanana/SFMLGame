@@ -419,6 +419,33 @@ src/RenderEngine.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.s
 .PHONY : src/RenderEngine.cpp.s
 
+src/Rendering/Shader.obj: src/Rendering/Shader.cpp.obj
+
+.PHONY : src/Rendering/Shader.obj
+
+# target to build an object file
+src/Rendering/Shader.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj
+.PHONY : src/Rendering/Shader.cpp.obj
+
+src/Rendering/Shader.i: src/Rendering/Shader.cpp.i
+
+.PHONY : src/Rendering/Shader.i
+
+# target to preprocess a source file
+src/Rendering/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.i
+.PHONY : src/Rendering/Shader.cpp.i
+
+src/Rendering/Shader.s: src/Rendering/Shader.cpp.s
+
+.PHONY : src/Rendering/Shader.s
+
+# target to generate assembly for a file
+src/Rendering/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.s
+.PHONY : src/Rendering/Shader.cpp.s
+
 src/TextureManager.obj: src/TextureManager.cpp.obj
 
 .PHONY : src/TextureManager.obj
@@ -515,6 +542,9 @@ help:
 	@echo ... src/RenderEngine.obj
 	@echo ... src/RenderEngine.i
 	@echo ... src/RenderEngine.s
+	@echo ... src/Rendering/Shader.obj
+	@echo ... src/Rendering/Shader.i
+	@echo ... src/Rendering/Shader.s
 	@echo ... src/TextureManager.obj
 	@echo ... src/TextureManager.i
 	@echo ... src/TextureManager.s

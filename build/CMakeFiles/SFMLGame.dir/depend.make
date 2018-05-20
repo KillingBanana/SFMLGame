@@ -52,6 +52,7 @@ CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Engine.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Manager.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/RenderEngine.hpp
+CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Rendering/Shader.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/TextureManager.hpp
 
 CMakeFiles/SFMLGame.dir/src/Entity.cpp.obj: ../src/Components/Component.hpp
@@ -72,6 +73,10 @@ CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj: ../src/Manager.hpp
 
 CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/RenderEngine.cpp
 CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/RenderEngine.hpp
+CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/Rendering/Shader.hpp
+
+CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj: ../src/Rendering/Shader.cpp
+CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj: ../src/Rendering/Shader.hpp
 
 CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj: ../src/TextureManager.cpp
 CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj: ../src/TextureManager.hpp
@@ -88,5 +93,6 @@ CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Engine.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Manager.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/RenderEngine.hpp
+CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Rendering/Shader.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/main.cpp
 
