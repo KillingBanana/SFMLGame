@@ -7,20 +7,22 @@
 
 class RenderEngine {
 public:
-	void InitOpenGL();
-	void InitShape();
+	~RenderEngine();
+
+	void Start();
 
 	void Render(sf::RenderWindow &renderWindow);
 	void Resize(int width, int height);
 private:
-	Shader shader = Shader();
-	bool wireFrame = false;
+	Shader *shader1 = nullptr, *shader2 = nullptr;
 
 	sf::Clock clock;
 
 	unsigned int vertexBufferObject = 0;
 	unsigned int vertexArrayObject = 0;
 	unsigned int elementBufferObject = 0;
+
+	void InitShape();
 
 	//Data
 	float vertices[24]{

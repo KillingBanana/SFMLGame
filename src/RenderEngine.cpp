@@ -1,14 +1,19 @@
 #include "RenderEngine.hpp"
 #include <cmath>
 
-void RenderEngine::InitOpenGL() {
+RenderEngine::~RenderEngine() {
+	delete shader1;
+	delete shader2;
+}
+
+void RenderEngine::Start() {
 	glewExperimental = GL_TRUE;
 	glewInit();
 
-	shader.Init("../assets/shaders/vertexShader.vs", "../assets/shaders/fragmentShader.fs");
+	shader1 = new Shader("../assets/shaders/vertexShader.vs", "../assets/shaders/fragmentShader.fs");
+	shader2 = new Shader("../assets/shaders/vertexShader2.vs", "../assets/shaders/fragmentShader.fs");
 
-	//Enable or disable wireframe
-	glPolygonMode(GL_FRONT_AND_BACK, wireFrame ? GL_LINE : GL_FILL);
+	InitShape();
 }
 
 void RenderEngine::InitShape() {
@@ -39,8 +44,14 @@ void RenderEngine::Render(sf::RenderWindow &renderWindow) {
 	glClearColor(.2, .3, .3, 1);
 	glClear(GL_COLOR_BUFFER_BIT);
 
-	shader.Use();
-	shader.SetFloat("offset", std::sin(clock.getElapsedTime().asSeconds()) / 2);
+	float time = clock.getElapsedTime().asSeconds();
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
+		shader2->Use();
+	} else {
+		shader1->Use();
+		shader1->SetFloat("offset", std::sin(time) / 2);
+	}
 
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vertexBufferObject);
 	glDrawArrays(GL_TRIANGLES, 0, 3);

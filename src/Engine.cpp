@@ -12,8 +12,7 @@ Engine::Engine() : window(
 void Engine::Start() {
 	running = true;
 
-	renderEngine.InitOpenGL();
-	renderEngine.InitShape();
+	renderEngine.Start();
 
 	manager.Start();
 }

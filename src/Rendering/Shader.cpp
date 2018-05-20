@@ -3,7 +3,7 @@
 #include <sstream>
 #include <iostream>
 
-void Shader::Init(const char *vertexPath, const char *fragmentPath) {
+Shader::Shader(const char *vertexPath, const char *fragmentPath) {
 	const char *vertexCode, *fragmentCode;
 	unsigned int vertexId, fragmentId;
 
