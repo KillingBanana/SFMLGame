@@ -24,7 +24,7 @@ private:
 	unsigned int texture0 = 0, texture1 = 0;
 
 	void InitShape();
-	void LoadTexture(const std::string &path, unsigned int *result);
+	void LoadTexture(const std::string &path, unsigned int *texture);
 
 	//Data
 	float vertices[32]{

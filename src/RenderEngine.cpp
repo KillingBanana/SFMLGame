@@ -1,5 +1,5 @@
 #include "RenderEngine.hpp"
-#include <cmath>
+#include <glm/gtc/matrix_transform.hpp>
 
 RenderEngine::~RenderEngine() {
 	delete shader;
@@ -54,9 +54,15 @@ void RenderEngine::Render(sf::RenderWindow &renderWindow) {
 	glClearColor(.2, .3, .3, 1);
 	glClear(GL_COLOR_BUFFER_BIT);
 
+	float time = clock.getElapsedTime().asSeconds();
+
 	shader->Use();
-	shader->SetFloat("xOffset", std::sin(clock.getElapsedTime().asSeconds()) / 2);
-	shader->SetFloat("blend", std::sin(2 * clock.getElapsedTime().asSeconds()) / 2 + 0.5f);
+	shader->SetFloat("blend", std::sin(2 * time) / 2 + 0.5f);
+
+	glm::mat4 transform = glm::mat4(1); //identity matrix
+	transform = glm::translate(transform, glm::vec3(std::cos(time) / 2, std::sin(time) / 2, 0.5f));
+	transform = glm::rotate(transform, time, glm::vec3(0.0f, 1.0f, 0.0f));
+	shader->SetMat4("transform", transform);
 
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, texture0);
@@ -71,10 +77,10 @@ void RenderEngine::Resize(int width, int height) {
 	glViewport(0, 0, width, height);
 }
 
-void RenderEngine::LoadTexture(const std::string &path, unsigned int *result) {
+void RenderEngine::LoadTexture(const std::string &path, unsigned int *texture) {
 	//Texture
-	glGenTextures(1, result);
-	glBindTexture(GL_TEXTURE_2D, *result);
+	glGenTextures(1, texture);
+	glBindTexture(GL_TEXTURE_2D, *texture);
 
 	//Texture wrap mode
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);

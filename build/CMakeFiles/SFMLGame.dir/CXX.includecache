@@ -135,7 +135,7 @@ D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 D:/Code/C++ Projects/SFMLGame/src/RenderEngine.cpp
 RenderEngine.hpp
 D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
-cmath
+glm/gtc/matrix_transform.hpp
 -
 
 D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
@@ -160,6 +160,8 @@ D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp
 GL/glew.h
 -
 string
+-
+glm/glm.hpp
 -
 
 D:/Code/C++ Projects/SFMLGame/src/TextureManager.cpp
