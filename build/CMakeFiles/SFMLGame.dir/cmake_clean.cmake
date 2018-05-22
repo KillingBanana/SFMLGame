@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj"
   "CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj"
   "CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj"
+  "CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj"
   "SFMLGame.pdb"
   "SFMLGame.exe"
   "SFMLGame.exe.manifest"

@@ -419,6 +419,33 @@ src/RenderEngine.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.s
 .PHONY : src/RenderEngine.cpp.s
 
+src/Renderer.obj: src/Renderer.cpp.obj
+
+.PHONY : src/Renderer.obj
+
+# target to build an object file
+src/Renderer.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj
+.PHONY : src/Renderer.cpp.obj
+
+src/Renderer.i: src/Renderer.cpp.i
+
+.PHONY : src/Renderer.i
+
+# target to preprocess a source file
+src/Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Renderer.cpp.i
+.PHONY : src/Renderer.cpp.i
+
+src/Renderer.s: src/Renderer.cpp.s
+
+.PHONY : src/Renderer.s
+
+# target to generate assembly for a file
+src/Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Renderer.cpp.s
+.PHONY : src/Renderer.cpp.s
+
 src/Rendering/Shader.obj: src/Rendering/Shader.cpp.obj
 
 .PHONY : src/Rendering/Shader.obj
@@ -542,6 +569,9 @@ help:
 	@echo ... src/RenderEngine.obj
 	@echo ... src/RenderEngine.i
 	@echo ... src/RenderEngine.s
+	@echo ... src/Renderer.obj
+	@echo ... src/Renderer.i
+	@echo ... src/Renderer.s
 	@echo ... src/Rendering/Shader.obj
 	@echo ... src/Rendering/Shader.i
 	@echo ... src/Rendering/Shader.s

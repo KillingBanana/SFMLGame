@@ -1,6 +1,5 @@
 #version 330 core
 
-in vec3 vertexColor;
 in vec2 texCoord;
 
 out vec4 fragmentColor;
@@ -11,5 +10,5 @@ uniform float blend;
 
 void main(){
     vec2 texCoordFlipped = vec2(texCoord.x, 1 - texCoord.y);
-	fragmentColor = mix(texture(texture0, texCoordFlipped), texture(texture1, 2 * texCoordFlipped), blend);
+	fragmentColor = mix(texture(texture0, texCoordFlipped), texture(texture1, texCoordFlipped), blend);
 }

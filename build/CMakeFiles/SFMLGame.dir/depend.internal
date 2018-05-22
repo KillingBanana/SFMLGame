@@ -53,6 +53,7 @@ CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
  D:/Code/C++ Projects/SFMLGame/src/Manager.hpp
  D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp
  D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp
  D:/Code/C++ Projects/SFMLGame/src/TextureManager.hpp
 CMakeFiles/SFMLGame.dir/src/Entity.cpp.obj
@@ -74,6 +75,11 @@ CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj
 CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/RenderEngine.cpp
  D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp
+CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj
+ D:/Code/C++ Projects/SFMLGame/src/Renderer.cpp
+ D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp
  D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp
 CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.cpp
@@ -94,5 +100,6 @@ CMakeFiles/SFMLGame.dir/src/main.cpp.obj
  D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
  D:/Code/C++ Projects/SFMLGame/src/Manager.hpp
  D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
+ D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp
  D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp
  D:/Code/C++ Projects/SFMLGame/src/main.cpp

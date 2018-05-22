@@ -135,13 +135,23 @@ D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 D:/Code/C++ Projects/SFMLGame/src/RenderEngine.cpp
 RenderEngine.hpp
 D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
-glm/gtc/matrix_transform.hpp
--
 
 D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
-SFML/Graphics.hpp
+SFMl/Graphics.hpp
+-
+Renderer.hpp
+D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Renderer.cpp
+Renderer.hpp
+D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp
+SFMl/Graphics.hpp
 -
 GL/glew.h
+-
+glm/gtc/matrix_transform.hpp
 -
 Rendering/Shader.hpp
 D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp

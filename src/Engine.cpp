@@ -42,7 +42,8 @@ void Engine::Update() {
 	if (!running) return;
 
 	float dTime = clock.restart().asSeconds();
-	manager.Update(dTime);
+	//manager.Update(dTime);
+	renderEngine.Update(dTime);
 }
 
 void Engine::Draw() {

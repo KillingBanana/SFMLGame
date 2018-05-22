@@ -1,43 +1,34 @@
 #ifndef SFMLGAME_RENDERENGINE_HPP
 #define SFMLGAME_RENDERENGINE_HPP
 
-#include <SFML/Graphics.hpp>
-#include <GL/glew.h>
-#include "Rendering/Shader.hpp"
+#include <SFMl/Graphics.hpp>
+#include "Renderer.hpp"
 
 class RenderEngine {
 public:
-	~RenderEngine();
-
 	void Start();
 
-	void Render(sf::RenderWindow &renderWindow);
+	void Update(float dTime);
+	void Render(sf::RenderTarget &renderTarget);
 	void Resize(int width, int height);
 private:
-	Shader *shader = nullptr;
-
 	sf::Clock clock;
+	float fov = 45.f;
 
-	unsigned int vertexBufferObject = 0;
-	unsigned int vertexArrayObject = 0;
-	unsigned int elementBufferObject = 0;
-	unsigned int texture0 = 0, texture1 = 0;
+	glm::vec3 position = glm::vec3(0.f);
 
-	void InitShape();
-	void LoadTexture(const std::string &path, unsigned int *texture);
-
-	//Data
-	float vertices[32]{
-			//position			//Colors		  //Texture coordinates
-			-0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
-			0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
-			-0.5f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f,
-			0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
-	};
-
-	int indices[6]{
-			0, 1, 2,
-			1, 2, 3
+	Renderer renderers[10];
+	glm::vec3 cubePositions[10]{
+			glm::vec3(0.0f, 0.0f, 0.0f),
+			glm::vec3(2.0f, 5.0f, -15.0f),
+			glm::vec3(-1.5f, -2.2f, -2.5f),
+			glm::vec3(-3.8f, -2.0f, -12.3f),
+			glm::vec3(2.4f, -0.4f, -3.5f),
+			glm::vec3(-1.7f, 3.0f, -7.5f),
+			glm::vec3(1.3f, -2.0f, -2.5f),
+			glm::vec3(1.5f, 2.0f, -2.5f),
+			glm::vec3(1.5f, 0.2f, -1.5f),
+			glm::vec3(-1.3f, 1.0f, -1.5f)
 	};
 };
 
