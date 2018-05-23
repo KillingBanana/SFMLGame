@@ -2,7 +2,7 @@
 #define ECS_ENGINE_HPP
 
 #include "Manager.hpp"
-#include "RenderEngine.hpp"
+#include "Rendering/RenderEngine.hpp"
 
 class Engine {
 public:
@@ -17,6 +17,8 @@ public:
 private:
 	sf::RenderWindow window;
 	sf::Clock clock;
+
+	Camera camera;
 
 	Manager manager;
 	RenderEngine renderEngine;

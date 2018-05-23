@@ -1,21 +1,21 @@
 #ifndef SFMLGAME_RENDERER_HPP
 #define SFMLGAME_RENDERER_HPP
 
-#include <SFMl/Graphics.hpp>
+#include <memory>
+#include <SFML/Graphics.hpp>
 #include <GL/glew.h>
 #include <glm/gtc/matrix_transform.hpp>
-#include "Rendering/Shader.hpp"
+#include "Shader.hpp"
 
 class Renderer {
 public:
 	glm::vec3 position = glm::vec3(0.f, 0.f, 0.f);
 	Renderer();
-	~Renderer();
 
-	void Start();
+	void Start(std::shared_ptr<Shader> shader);
 	void Render(glm::mat4 viewTransform);
 private:
-	Shader *shader;
+	std::shared_ptr<Shader> shader;
 	sf::Clock clock;
 
 	unsigned int vertexBufferObject = 0;

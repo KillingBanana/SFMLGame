@@ -51,8 +51,9 @@ CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Engine.cpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Engine.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Manager.hpp
-CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/RenderEngine.hpp
-CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Renderer.hpp
+CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Rendering/Camera.hpp
+CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Rendering/RenderEngine.hpp
+CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Rendering/Renderer.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/Rendering/Shader.hpp
 CMakeFiles/SFMLGame.dir/src/Engine.cpp.obj: ../src/TextureManager.hpp
 
@@ -72,14 +73,18 @@ CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj: ../src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj: ../src/Manager.cpp
 CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj: ../src/Manager.hpp
 
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/RenderEngine.cpp
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/RenderEngine.hpp
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/Renderer.hpp
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/Rendering/Shader.hpp
+CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj: ../src/Rendering/Camera.cpp
+CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj: ../src/Rendering/Camera.hpp
 
-CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj: ../src/Renderer.cpp
-CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj: ../src/Renderer.hpp
-CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj: ../src/Rendering/Shader.hpp
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj: ../src/Rendering/Camera.hpp
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj: ../src/Rendering/RenderEngine.cpp
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj: ../src/Rendering/RenderEngine.hpp
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj: ../src/Rendering/Renderer.hpp
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj: ../src/Rendering/Shader.hpp
+
+CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj: ../src/Rendering/Renderer.cpp
+CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj: ../src/Rendering/Renderer.hpp
+CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj: ../src/Rendering/Shader.hpp
 
 CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj: ../src/Rendering/Shader.cpp
 CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj: ../src/Rendering/Shader.hpp
@@ -98,8 +103,9 @@ CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Components/TextRenderer.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Engine.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Entity.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Manager.hpp
-CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/RenderEngine.hpp
-CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Renderer.hpp
+CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Rendering/Camera.hpp
+CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Rendering/RenderEngine.hpp
+CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Rendering/Renderer.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/Rendering/Shader.hpp
 CMakeFiles/SFMLGame.dir/src/main.cpp.obj: ../src/main.cpp
 

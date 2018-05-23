@@ -107,8 +107,8 @@ D:/Code/C++ Projects/SFMLGame/src/TextureManager.hpp
 D:/Code/C++ Projects/SFMLGame/src/Engine.hpp
 Manager.hpp
 D:/Code/C++ Projects/SFMLGame/src/Manager.hpp
-RenderEngine.hpp
-D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
+Rendering/RenderEngine.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/RenderEngine.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Entity.cpp
 Entity.hpp
@@ -132,28 +132,44 @@ D:/Code/C++ Projects/SFMLGame/src/Components/Components.hpp
 Entity.hpp
 D:/Code/C++ Projects/SFMLGame/src/Entity.hpp
 
-D:/Code/C++ Projects/SFMLGame/src/RenderEngine.cpp
-RenderEngine.hpp
-D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Camera.cpp
+Camera.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Camera.hpp
+SFML/Window.hpp
+-
 
-D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp
-SFMl/Graphics.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Camera.hpp
+glm/vec3.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+
+D:/Code/C++ Projects/SFMLGame/src/Rendering/RenderEngine.cpp
+RenderEngine.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/RenderEngine.hpp
+
+D:/Code/C++ Projects/SFMLGame/src/Rendering/RenderEngine.hpp
+SFML/Graphics.hpp
 -
 Renderer.hpp
-D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Renderer.hpp
+Camera.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Camera.hpp
 
-D:/Code/C++ Projects/SFMLGame/src/Renderer.cpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Renderer.cpp
 Renderer.hpp
-D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Renderer.hpp
 
-D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp
-SFMl/Graphics.hpp
+D:/Code/C++ Projects/SFMLGame/src/Rendering/Renderer.hpp
+memory
+-
+SFML/Graphics.hpp
 -
 GL/glew.h
 -
 glm/gtc/matrix_transform.hpp
 -
-Rendering/Shader.hpp
+Shader.hpp
 D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.hpp
 
 D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.cpp

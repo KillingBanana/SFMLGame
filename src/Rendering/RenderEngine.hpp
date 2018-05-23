@@ -1,21 +1,20 @@
 #ifndef SFMLGAME_RENDERENGINE_HPP
 #define SFMLGAME_RENDERENGINE_HPP
 
-#include <SFMl/Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include "Renderer.hpp"
+#include "Camera.hpp"
 
 class RenderEngine {
 public:
 	void Start();
 
-	void Update(float dTime);
-	void Render(sf::RenderTarget &renderTarget);
+	void Render(sf::RenderTarget &renderTarget, Camera &camera);
 	void Resize(int width, int height);
 private:
-	sf::Clock clock;
-	float fov = 45.f;
+	std::shared_ptr<Shader> shader = nullptr;
 
-	glm::vec3 position = glm::vec3(0.f);
+	float fov = 45.f;
 
 	Renderer renderers[10];
 	glm::vec3 cubePositions[10]{

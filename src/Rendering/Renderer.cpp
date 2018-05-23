@@ -2,18 +2,8 @@
 
 Renderer::Renderer() : shader(nullptr), clock() {}
 
-Renderer::~Renderer() {
-	delete shader;
-}
-
-void Renderer::Start() {
-	delete shader;
-
-	shader = new Shader("../assets/shaders/vertexShader.vs", "../assets/shaders/fragmentShader.fs");
-	shader->Use();
-	shader->SetInt("texture0", 0);
-	shader->SetInt("texture1", 1);
-
+void Renderer::Start(std::shared_ptr<Shader> shader) {
+	this->shader = std::move(shader);
 	//Create Vertex Buffer Object
 	glGenBuffers(1, &vertexBufferObject);
 	glBindBuffer(GL_ARRAY_BUFFER, vertexBufferObject);
@@ -73,12 +63,11 @@ void Renderer::LoadTexture(const std::string &path, unsigned int *texture) {
 void Renderer::Render(glm::mat4 viewTransform) {
 	float time = clock.getElapsedTime().asSeconds();
 
-	shader->Use();
 	shader->SetFloat("blend", std::sin(2 * time) / 2 + 0.5f);
 
 	glm::mat4 transform = glm::mat4(1.f);
 	transform = glm::translate(transform, position);
-	transform = glm::rotate(transform, time * glm::radians(50.f), glm::vec3(1.f, 0.5f, 0.f));
+	transform = glm::rotate(transform, time * glm::radians(50.f), position + glm::vec3(1.f, 0.5f, 0.f));
 
 	transform = viewTransform * transform;
 

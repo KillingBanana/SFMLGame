@@ -42,15 +42,15 @@ void Engine::Update() {
 	if (!running) return;
 
 	float dTime = clock.restart().asSeconds();
-	//manager.Update(dTime);
-	renderEngine.Update(dTime);
+	manager.Update(dTime);
+	camera.Update(dTime);
 }
 
 void Engine::Draw() {
 	if (!running) return;
 
 	//window.clear();
-	renderEngine.Render(window);
+	renderEngine.Render(window, camera);
 
 	//window.pushGLStates();
 	//manager.Draw(window);

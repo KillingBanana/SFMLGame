@@ -344,28 +344,28 @@ CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj.provides: CMakeFiles/SFMLGame.dir/sr
 CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj
 
 
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: CMakeFiles/SFMLGame.dir/flags.make
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj: ../src/RenderEngine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj"
-	D:\Programs\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLGame.dir\src\RenderEngine.cpp.obj -c "D:\Code\C++ Projects\SFMLGame\src\RenderEngine.cpp"
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj: CMakeFiles/SFMLGame.dir/flags.make
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj: ../src/Rendering/RenderEngine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj"
+	D:\Programs\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLGame.dir\src\Rendering\RenderEngine.cpp.obj -c "D:\Code\C++ Projects\SFMLGame\src\Rendering\RenderEngine.cpp"
 
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.i"
-	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Code\C++ Projects\SFMLGame\src\RenderEngine.cpp" > CMakeFiles\SFMLGame.dir\src\RenderEngine.cpp.i
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.i"
+	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Code\C++ Projects\SFMLGame\src\Rendering\RenderEngine.cpp" > CMakeFiles\SFMLGame.dir\src\Rendering\RenderEngine.cpp.i
 
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.s"
-	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Code\C++ Projects\SFMLGame\src\RenderEngine.cpp" -o CMakeFiles\SFMLGame.dir\src\RenderEngine.cpp.s
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.s"
+	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Code\C++ Projects\SFMLGame\src\Rendering\RenderEngine.cpp" -o CMakeFiles\SFMLGame.dir\src\Rendering\RenderEngine.cpp.s
 
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.requires:
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj.requires:
 
-.PHONY : CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.requires
+.PHONY : CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj.requires
 
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.provides: CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.provides.build
-.PHONY : CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.provides
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj.provides: CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj.provides
 
-CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj
+CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj
 
 
 CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj: CMakeFiles/SFMLGame.dir/flags.make
@@ -392,28 +392,52 @@ CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj.provides: CMakeFiles/SFMLGa
 CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj
 
 
-CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj: CMakeFiles/SFMLGame.dir/flags.make
-CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj: ../src/Renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj"
-	D:\Programs\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLGame.dir\src\Renderer.cpp.obj -c "D:\Code\C++ Projects\SFMLGame\src\Renderer.cpp"
+CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj: CMakeFiles/SFMLGame.dir/flags.make
+CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj: ../src/Rendering/Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj"
+	D:\Programs\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLGame.dir\src\Rendering\Renderer.cpp.obj -c "D:\Code\C++ Projects\SFMLGame\src\Rendering\Renderer.cpp"
 
-CMakeFiles/SFMLGame.dir/src/Renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLGame.dir/src/Renderer.cpp.i"
-	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Code\C++ Projects\SFMLGame\src\Renderer.cpp" > CMakeFiles\SFMLGame.dir\src\Renderer.cpp.i
+CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.i"
+	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Code\C++ Projects\SFMLGame\src\Rendering\Renderer.cpp" > CMakeFiles\SFMLGame.dir\src\Rendering\Renderer.cpp.i
 
-CMakeFiles/SFMLGame.dir/src/Renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLGame.dir/src/Renderer.cpp.s"
-	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Code\C++ Projects\SFMLGame\src\Renderer.cpp" -o CMakeFiles\SFMLGame.dir\src\Renderer.cpp.s
+CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.s"
+	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Code\C++ Projects\SFMLGame\src\Rendering\Renderer.cpp" -o CMakeFiles\SFMLGame.dir\src\Rendering\Renderer.cpp.s
 
-CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj.requires:
+CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj.requires:
 
-.PHONY : CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj.requires
+.PHONY : CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj.requires
 
-CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj.provides: CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj.provides.build
-.PHONY : CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj.provides
+CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj.provides: CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj.provides
 
-CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj
+CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj
+
+
+CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj: CMakeFiles/SFMLGame.dir/flags.make
+CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj: ../src/Rendering/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj"
+	D:\Programs\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SFMLGame.dir\src\Rendering\Camera.cpp.obj -c "D:\Code\C++ Projects\SFMLGame\src\Rendering\Camera.cpp"
+
+CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.i"
+	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Code\C++ Projects\SFMLGame\src\Rendering\Camera.cpp" > CMakeFiles\SFMLGame.dir\src\Rendering\Camera.cpp.i
+
+CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.s"
+	D:\Programs\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Code\C++ Projects\SFMLGame\src\Rendering\Camera.cpp" -o CMakeFiles\SFMLGame.dir\src\Rendering\Camera.cpp.s
+
+CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj.requires:
+
+.PHONY : CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj.requires
+
+CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj.provides: CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj.provides.build
+.PHONY : CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj.provides
+
+CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj.provides.build: CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj
 
 
 # Object files for target SFMLGame
@@ -430,9 +454,10 @@ SFMLGame_OBJECTS = \
 "CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj" \
 "CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.obj" \
 "CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj" \
-"CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj" \
+"CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj" \
 "CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj" \
-"CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj"
+"CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj" \
+"CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj"
 
 # External object files for target SFMLGame
 SFMLGame_EXTERNAL_OBJECTS =
@@ -449,14 +474,15 @@ SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Components/TextRenderer.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj
-SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj
+SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj
-SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj
+SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj
+SFMLGame.exe: CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/build.make
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/linklibs.rsp
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/objects1.rsp
 SFMLGame.exe: CMakeFiles/SFMLGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable SFMLGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Code\C++ Projects\SFMLGame\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable SFMLGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SFMLGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -476,9 +502,10 @@ CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Components/TextRen
 CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/TextureManager.cpp.obj.requires
 CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Components/KeyboardInput.cpp.obj.requires
 CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Manager.cpp.obj.requires
-CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj.requires
+CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj.requires
 CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Rendering/Shader.cpp.obj.requires
-CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj.requires
+CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj.requires
+CMakeFiles/SFMLGame.dir/requires: CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj.requires
 
 .PHONY : CMakeFiles/SFMLGame.dir/requires
 

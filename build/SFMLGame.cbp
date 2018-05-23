@@ -145,16 +145,22 @@
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Manager.hpp">
 			<Option target="SFMLGame"/>
 		</Unit>
-		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/RenderEngine.cpp">
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Rendering/Camera.cpp">
 			<Option target="SFMLGame"/>
 		</Unit>
-		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/RenderEngine.hpp">
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Rendering/Camera.hpp">
 			<Option target="SFMLGame"/>
 		</Unit>
-		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Renderer.cpp">
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Rendering/RenderEngine.cpp">
 			<Option target="SFMLGame"/>
 		</Unit>
-		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Renderer.hpp">
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Rendering/RenderEngine.hpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Rendering/Renderer.cpp">
+			<Option target="SFMLGame"/>
+		</Unit>
+		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Rendering/Renderer.hpp">
 			<Option target="SFMLGame"/>
 		</Unit>
 		<Unit filename="D:/Code/C++ Projects/SFMLGame/src/Rendering/Shader.cpp">

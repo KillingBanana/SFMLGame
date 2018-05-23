@@ -392,59 +392,86 @@ src/Manager.cpp.s:
 	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Manager.cpp.s
 .PHONY : src/Manager.cpp.s
 
-src/RenderEngine.obj: src/RenderEngine.cpp.obj
+src/Rendering/Camera.obj: src/Rendering/Camera.cpp.obj
 
-.PHONY : src/RenderEngine.obj
-
-# target to build an object file
-src/RenderEngine.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.obj
-.PHONY : src/RenderEngine.cpp.obj
-
-src/RenderEngine.i: src/RenderEngine.cpp.i
-
-.PHONY : src/RenderEngine.i
-
-# target to preprocess a source file
-src/RenderEngine.cpp.i:
-	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.i
-.PHONY : src/RenderEngine.cpp.i
-
-src/RenderEngine.s: src/RenderEngine.cpp.s
-
-.PHONY : src/RenderEngine.s
-
-# target to generate assembly for a file
-src/RenderEngine.cpp.s:
-	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/RenderEngine.cpp.s
-.PHONY : src/RenderEngine.cpp.s
-
-src/Renderer.obj: src/Renderer.cpp.obj
-
-.PHONY : src/Renderer.obj
+.PHONY : src/Rendering/Camera.obj
 
 # target to build an object file
-src/Renderer.cpp.obj:
-	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Renderer.cpp.obj
-.PHONY : src/Renderer.cpp.obj
+src/Rendering/Camera.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.obj
+.PHONY : src/Rendering/Camera.cpp.obj
 
-src/Renderer.i: src/Renderer.cpp.i
+src/Rendering/Camera.i: src/Rendering/Camera.cpp.i
 
-.PHONY : src/Renderer.i
+.PHONY : src/Rendering/Camera.i
 
 # target to preprocess a source file
-src/Renderer.cpp.i:
-	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Renderer.cpp.i
-.PHONY : src/Renderer.cpp.i
+src/Rendering/Camera.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.i
+.PHONY : src/Rendering/Camera.cpp.i
 
-src/Renderer.s: src/Renderer.cpp.s
+src/Rendering/Camera.s: src/Rendering/Camera.cpp.s
 
-.PHONY : src/Renderer.s
+.PHONY : src/Rendering/Camera.s
 
 # target to generate assembly for a file
-src/Renderer.cpp.s:
-	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Renderer.cpp.s
-.PHONY : src/Renderer.cpp.s
+src/Rendering/Camera.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Camera.cpp.s
+.PHONY : src/Rendering/Camera.cpp.s
+
+src/Rendering/RenderEngine.obj: src/Rendering/RenderEngine.cpp.obj
+
+.PHONY : src/Rendering/RenderEngine.obj
+
+# target to build an object file
+src/Rendering/RenderEngine.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.obj
+.PHONY : src/Rendering/RenderEngine.cpp.obj
+
+src/Rendering/RenderEngine.i: src/Rendering/RenderEngine.cpp.i
+
+.PHONY : src/Rendering/RenderEngine.i
+
+# target to preprocess a source file
+src/Rendering/RenderEngine.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.i
+.PHONY : src/Rendering/RenderEngine.cpp.i
+
+src/Rendering/RenderEngine.s: src/Rendering/RenderEngine.cpp.s
+
+.PHONY : src/Rendering/RenderEngine.s
+
+# target to generate assembly for a file
+src/Rendering/RenderEngine.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/RenderEngine.cpp.s
+.PHONY : src/Rendering/RenderEngine.cpp.s
+
+src/Rendering/Renderer.obj: src/Rendering/Renderer.cpp.obj
+
+.PHONY : src/Rendering/Renderer.obj
+
+# target to build an object file
+src/Rendering/Renderer.cpp.obj:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.obj
+.PHONY : src/Rendering/Renderer.cpp.obj
+
+src/Rendering/Renderer.i: src/Rendering/Renderer.cpp.i
+
+.PHONY : src/Rendering/Renderer.i
+
+# target to preprocess a source file
+src/Rendering/Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.i
+.PHONY : src/Rendering/Renderer.cpp.i
+
+src/Rendering/Renderer.s: src/Rendering/Renderer.cpp.s
+
+.PHONY : src/Rendering/Renderer.s
+
+# target to generate assembly for a file
+src/Rendering/Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles\SFMLGame.dir\build.make CMakeFiles/SFMLGame.dir/src/Rendering/Renderer.cpp.s
+.PHONY : src/Rendering/Renderer.cpp.s
 
 src/Rendering/Shader.obj: src/Rendering/Shader.cpp.obj
 
@@ -566,12 +593,15 @@ help:
 	@echo ... src/Manager.obj
 	@echo ... src/Manager.i
 	@echo ... src/Manager.s
-	@echo ... src/RenderEngine.obj
-	@echo ... src/RenderEngine.i
-	@echo ... src/RenderEngine.s
-	@echo ... src/Renderer.obj
-	@echo ... src/Renderer.i
-	@echo ... src/Renderer.s
+	@echo ... src/Rendering/Camera.obj
+	@echo ... src/Rendering/Camera.i
+	@echo ... src/Rendering/Camera.s
+	@echo ... src/Rendering/RenderEngine.obj
+	@echo ... src/Rendering/RenderEngine.i
+	@echo ... src/Rendering/RenderEngine.s
+	@echo ... src/Rendering/Renderer.obj
+	@echo ... src/Rendering/Renderer.i
+	@echo ... src/Rendering/Renderer.s
 	@echo ... src/Rendering/Shader.obj
 	@echo ... src/Rendering/Shader.i
 	@echo ... src/Rendering/Shader.s
